@@ -1,5 +1,5 @@
 var myWindow = window.open("", "");
-
+myWindow.write('<title>test</title>');
 (function() {
   if (window.top === window.self) {
     const tabId = sessionStorage.tabId ? sessionStorage.tabId : sessionStorage.tabId = Math.random() * 16;
